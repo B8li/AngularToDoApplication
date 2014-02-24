@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace ToDoAngularTestApplication
+namespace TodoA.Web
 {
     public class BundleConfig
     {
@@ -10,6 +9,20 @@ namespace ToDoAngularTestApplication
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/third-party").Include(
+                        "~/Scripts/angular/angular.js",
+                        "~/Scripts/moment.js"
+                        
+            ));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular-app").Include(
+                        // the main application/module script
+                        "~/Scripts/app/TodoApp.js",
+
+                        // contorllers
+                        "~/Scripts/app/controllers/*.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,7 +38,9 @@ namespace ToDoAngularTestApplication
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/app/app.css"
+                    ));
         }
     }
 }

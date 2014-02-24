@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ToDoAngularTestApplication.Models
+namespace TodoA.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
