@@ -6,39 +6,93 @@
     list-style: none !important;
 }
 
+#list-global-actions {
+    margin-bottom: 20px;
+}
+
     #listOfTodos li {
         display: block;
         clear: both;
+        
         width: 100%;
+        
         padding: 10px;
-        border: 1px solid #CCC;
+        
         margin-top: 5px;
         margin-bottom: 5px;
+        
+        border: 1px solid #CCC;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
     }
 
 .todoList {
+
 }
 
     .list-stat {
+
     }
 
-        .list-name {
-
-            font-size: 20px;
-            padding-bottom: 2px;
-            margin-bottom: 5px;
-            border-bottom: 1px dashed #CCC;
-
+        .stat-name {
+            font-weight: bold;
         }
+
+         .stat-name i{
+             margin-right: 5px;
+        }
+
+        .list-name {
+            padding: 10px;
+            
+            font-size: 20px;
+            
+            background-color: #f9f9f9;
+            
+            margin-bottom: 5px;
+            
+            border-left: 2px dashed #CCC;
+            
+            -ms-border-radius: 5px;
+            border-radius: 2px;
+        }
+
+            .list-name:hover {
+                cursor: pointer;
+                background-color: #f2f2f2;
+            }
 
         .list-date-created {
 
         }
 
+                color: #3a6baf;
+            .list-date-created i {
+            }
+
         .list-finished-items {
 
         }
 
-        .list-remaining-items {
+            .list-finished-items i{
+                color: #15c13c;
+            }
 
+        .list-remaining-items {
+                
         }
+
+            .list-remaining-items i{
+                color: #d96128;
+            }
+
+       .list-actions {
+           margin-top: 10px;
+           text-align: right;
+           padding-top: 5px;
+        }
+
+           .list-action {
+               margin-left: 5px;
+               margin-right: 5px;
+            }

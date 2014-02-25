@@ -1,10 +1,26 @@
 ﻿
 <div class="page-header">
+
     <h1>
+        <i class="fa fa-list"></i>
         Your To Do Lists
     </h1>
+    <p class="lead"> Examine, sort and manage your to do lists</p>
 
-    <p class="lead"> Examine, sort and manage your to do lists:</p>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div id="list-global-actions">
+            <button class="btn btn-success">
+                <i class="fa fa-plus">
+
+                </i>
+
+                Add New List
+            </button>
+        </div>
+    </div>
 </div>
 
 <div class="row">
@@ -28,32 +44,53 @@
                         <div class="row">
                             <div class=" col-xs-6">
                                 <div class="list-date-created list-stat">
-                                    Created On: {{list.CreatedOn.format('MMMM Do YYYY, h:mm:ss a')}}
+                                    <span class="stat-name">
+                                        <i class="fa fa-calendar"></i>
+                                        Created On:
+                                    </span>
+                                    {{list.CreatedOn.format('MMMM Do YYYY, h:mm:ss a')}}
                                 </div>
                             </div>
-                            
+
                             <div class=" col-xs-3">
                                 <div class="list-stat list-finished-items">
-                                    Finished Items: {{list.FinishedItems}}
+                                    <span class="stat-name">
+                                        <i class="fa fa-check-circle-o"></i>
+                                        Finished Items:
+                                    </span>
+                                    {{list.FinishedItems}}
                                 </div>
                             </div>
 
                             <div class="col-xs-3">
                                 <div class="list-stat list-remaining-items">
-                                    Remaining Items: {{list.RemainingItems}}
+                                    <span class="stat-name">
+                                        <i class="fa fa-circle-o"></i>
+                                        Remaining Items:
+                                    </span>
+                                    {{list.RemainingItems}}
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-xs-12">
-                                
+                                <div class="list-actions">
+                                    <span class="list-action">
+                                        <button class="btn btn-primary" data-toggle="tooltip" title="List Details">
+                                            <span class="fa fa-edit"></span>
+                                        </button>
+                                    </span>
+                                    <span class="list-action">
+                                        <button class="btn btn-danger" data-toggle="tooltip" title="Delete List">
+                                            <span class="fa fa-trash-o"></span>
+                                        </button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </li>
-
             </ul>
         </div>
     </div>

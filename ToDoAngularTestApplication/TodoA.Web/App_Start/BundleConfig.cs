@@ -7,6 +7,10 @@ namespace TodoA.Web
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+            #region Scripts
+
+            
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -36,11 +40,18 @@ namespace TodoA.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            #endregion
+
+            #region Content
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css",
                       "~/Content/app/app.css"
                     ));
+
+            #endregion
         }
     }
 }
