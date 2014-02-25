@@ -15,6 +15,7 @@
 
         factory.getUserTodoLists = function () {
             var deferred = $q.defer();
+
             $http.get("/TodoLists/GetUserTodoLists")
                 .success(function (data) {
                     // Resolve the promise with data objcet.
@@ -22,7 +23,7 @@
                 });
                 
             // Return the promise emidietly(will be solved in the future)    
-            retrun deferred.promise;
+            return deferred.promise;
         };
 
         // return the factory object
