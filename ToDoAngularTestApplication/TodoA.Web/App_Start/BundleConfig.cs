@@ -24,6 +24,12 @@ namespace TodoA.Web
                         // the main application/module script
                         "~/Scripts/app/TodoApp.js",
 
+                        // services
+                        "~/Scripts/app/services/*.js",
+
+                        // factories
+                        "~/Scripts/app/factories/*.js",
+
                         // contorllers
                         "~/Scripts/app/controllers/*.js"
                         ));

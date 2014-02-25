@@ -36,7 +36,7 @@
                         <div class="row">
                             <div class=" col-xs-12">
                                 <div class="list-name list-stat">
-                                    {{list.Name}}
+                                    {{list.Title}}
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                         <i class="fa fa-calendar"></i>
                                         Created On:
                                     </span>
-                                    {{list.CreatedOn.format('MMMM Do YYYY, h:mm:ss a')}}
+                                    {{list.DateCreated | date:'MM/dd/yyyy @@ h:mma'}}
                                 </div>
                             </div>
 
@@ -58,7 +58,7 @@
                                         <i class="fa fa-check-circle-o"></i>
                                         Finished Items:
                                     </span>
-                                    {{list.FinishedItems}}
+                                    {{list.CompletedItems}}
                                 </div>
                             </div>
 
