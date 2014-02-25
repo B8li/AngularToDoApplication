@@ -8,6 +8,11 @@
         $scope.TodoLists = [];
 
         // get the to-do lists from the server
-        todoListFactory.getUserTodoLists($scope);
+        var promise = todoListFactory.getUserTodoLists();
+        
+        // This code will happen in 'future'.
+        promise.then(function (data) {
+            $scope.TodoLists = data;
+        });
     });
 })();
