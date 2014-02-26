@@ -53,7 +53,6 @@
     }
 
 .list-date-created {
-    
 }
 
 
@@ -99,3 +98,57 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* The ul list containing the to-do list items*/
+#item-list {
+    list-style: none;
+}
+
+.list-item {
+    display: block;
+    float: left;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #cfcfcf;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fef281;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+}
+
+    .list-item:hover {
+        cursor: pointer;
+        background-color: #ebe07d;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+    }
+
+.list-item-text {
+    height: 150px;
+    text-align: center;
+    font-family: 'Cookie', Helvetica, sans-serif;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    font-size: 24px;
+}
+
+.list-item-actions {
+    font-size: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 30px;
+}
+
+.item-status {
+}
+
+    .item-status i.finished {
+        color: #15c13c;
+    }
+
+    .item-status i.pending {
+        color: #d96128;
+    }

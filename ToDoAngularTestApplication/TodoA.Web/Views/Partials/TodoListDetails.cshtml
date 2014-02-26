@@ -9,7 +9,7 @@
         </span>
 
     </h1>
-    
+
     <p>
         <span class="list-finished-items details-stat">
             <span>
@@ -31,9 +31,20 @@
 
     <div class="col-xs-12">
 
-        <ul>
-            <li data-ng-repeat="item in TodoList.Items">
-                {{item.Text}}
+        <ul id="item-list">
+            <li class="list-item" data-ng-repeat="item in TodoList.Items">
+                <div class="list-item-text">
+                    {{item.Text}}
+                </div>
+                
+                <div class="list-item-actions">
+                    <span class="item-status">
+                        <i class="fa" data-ng-class="checkItemStatus(item)">
+                            
+                        </i>
+                    </span>
+                </div>
+                
             </li>
         </ul>
 

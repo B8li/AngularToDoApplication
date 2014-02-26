@@ -25,6 +25,20 @@
          Event Handlers
          ==========================================
         */
+        
+
+        /*
+         Directive Calculations
+         ==========================================
+        */
+
+        $scope.checkItemStatus = function(item) {
+            if (item.Status) {
+                return " fa-check-circle-o finished";
+            } else {
+                return " fa-circle-o pending";
+            }
+        };
 
     });
 })();
