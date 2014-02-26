@@ -1,1 +1,42 @@
-﻿<h1>List Details</h1>
+﻿<div class="page-header">
+    <h1>
+        <i class="fa fa-list"></i>
+        <span>{{TodoList.Title}}</span>
+
+        <span class="app-details-header-info">
+            created on
+            {{TodoList.DateCreated | date:'MM/dd/yyyy @@ h:mma'}}
+        </span>
+
+    </h1>
+    
+    <p>
+        <span class="list-finished-items details-stat">
+            <span>
+                <i class="fa fa-check-circle-o"></i>
+                {{TodoList.CompletedItems}}
+            </span>
+        </span>
+
+        <span class="list-remaining-items details-stat">
+            <span>
+                <i class="fa fa-circle-o"></i>
+                {{TodoList.RemainingItems}}
+            </span>
+        </span>
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="col-xs-12">
+
+        <ul>
+            <li data-ng-repeat="item in TodoList.Items">
+                {{item.Text}}
+            </li>
+        </ul>
+
+    </div>
+
+</div>

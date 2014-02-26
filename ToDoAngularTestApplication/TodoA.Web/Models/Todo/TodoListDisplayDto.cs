@@ -7,6 +7,8 @@ namespace TodoA.Web.Models.Todo
     /// </summary>
     public class TodoListDisplayDto
     {
+        public int Id { get; set; }
+
         public string Title { get; set; }
 
         public DateTime DateCreated { get; set; }

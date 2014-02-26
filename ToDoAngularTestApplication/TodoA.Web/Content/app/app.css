@@ -1,5 +1,5 @@
 ﻿/*
-    Application related styles
+    Application related styles for the To-do LIST PAGE
 */
 
 #listOfTodos {
@@ -10,88 +10,92 @@
     margin-bottom: 20px;
 }
 
-    #listOfTodos li {
-        display: block;
-        clear: both;
-        
-        width: 100%;
-        
-        padding: 10px;
-        
-        margin-top: 5px;
-        margin-bottom: 5px;
-        
-        border: 1px solid #CCC;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
-    }
+#listOfTodos li {
+    display: block;
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #CCC;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
 
 .todoList {
-
 }
-    .list-stat {
 
+.list-stat {
+}
+
+.stat-name {
+    font-weight: bold;
+}
+
+    .stat-name i {
+        margin-right: 5px;
     }
-        .stat-name {
-            font-weight: bold;
-        }
 
-         .stat-name i{
-             margin-right: 5px;
-        }
+.list-name {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-left: 2px dashed #CCC;
+    border-right: 2px dashed #CCC;
+    -ms-border-radius: 5px;
+    border-radius: 2px;
+}
 
-        .list-name {
-            padding: 10px;
-            
-            font-size: 20px;
-            
-            background-color: #f9f9f9;
-            
-            margin-bottom: 5px;
-            
-            border-left: 2px dashed #CCC;
-            border-right: 2px dashed #CCC;
-            
-            -ms-border-radius: 5px;
-            border-radius: 2px;
-        }
+    .list-name:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+    }
 
-            .list-name:hover {
-                cursor: pointer;
-                background-color: #f2f2f2;
-            }
+.list-date-created {
+    
+}
 
-        .list-date-created {
 
-        }
+    .list-date-created i {
+        color: #3a6baf;
+    }
 
-                color: #3a6baf;
-            .list-date-created i {
-            }
+.list-finished-items {
+}
 
-        .list-finished-items {
+    .list-finished-items i {
+        color: #15c13c;
+    }
 
-        }
+.list-remaining-items {
+}
 
-            .list-finished-items i{
-                color: #15c13c;
-            }
+    .list-remaining-items i {
+        color: #d96128;
+    }
 
-        .list-remaining-items {
-                
-        }
+.list-actions {
+    margin-top: 10px;
+    text-align: right;
+    padding-top: 5px;
+}
 
-            .list-remaining-items i{
-                color: #d96128;
-            }
+.list-action {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
-       .list-actions {
-           margin-top: 10px;
-           text-align: right;
-           padding-top: 5px;
-        }
+/*
+    Application related styles for the To-do DETAILS PAGE
+*/
 
-           .list-action {
-               margin-left: 5px;
-               margin-right: 5px;
-            }
+.app-details-header-info {
+    font-size: 18px !important;
+    color: #cccccc !important;
+}
+
+.details-stat {
+    margin-left: 10px;
+    margin-right: 10px;
+}

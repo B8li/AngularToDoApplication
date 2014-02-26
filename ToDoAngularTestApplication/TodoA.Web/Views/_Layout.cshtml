@@ -6,10 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular Todo</title>
-    
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -20,11 +20,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                To-do List Tracker
+                
+                <a href="#" class="navbar-brand">
+                    To-do List Tracker
+                </a>
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    
                     <li>
                         <a href="#">My Lists</a>
                     </li>
@@ -39,7 +42,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/third-party")
     @Scripts.Render("~/bundles/bootstrap")
-    
+
     @Scripts.Render("~/bundles/angular-app")
 
     @RenderSection("scripts", required: false)

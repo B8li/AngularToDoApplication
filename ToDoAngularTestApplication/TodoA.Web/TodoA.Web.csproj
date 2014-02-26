@@ -171,15 +171,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\api\TodoListDataController.cs" />
-    <Compile Include="Controllers\Base\BaseController.cs" />
-    <Compile Include="Controllers\TodoListsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\CustomResults\IsoDateJsonResult.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Todo\TodoItemViewModel.cs" />
+    <Compile Include="Models\Todo\TodoItemDto.cs" />
+    <Compile Include="Models\Todo\TodoListDetailsDto.cs" />
     <Compile Include="Models\Todo\TodoListDisplayDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="routes\DefaultRoute.cs" />
@@ -215,6 +214,7 @@
     <Content Include="Scripts\angular\angular-touch.min.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="Scripts\app\controllers\toDoListsDetailsController.js" />
     <Content Include="Scripts\app\controllers\todoListsController.js" />
     <Content Include="Scripts\app\factories\todoListFactory.js" />
     <Content Include="Scripts\app\routing\routes.js" />

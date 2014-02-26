@@ -11,8 +11,9 @@
                 controller: "ToDoListsController",
                 templateUrl: '/views/partials/todolists'
             })
-            .when("/listdetails", {
-
+            .when("/listdetails/:id", {
+                controller: "ToDoListsDetailsController",
+                templateUrl: '/views/partials/todolistdetails'
             })
             .otherwise({ redirectTo: '/' });
     });

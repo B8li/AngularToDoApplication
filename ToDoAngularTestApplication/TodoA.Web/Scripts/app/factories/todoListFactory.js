@@ -11,6 +11,7 @@
 
         /*
             The method will retrieve the user User To-do lists.
+            =====================================================
         */
 
         factory.getUserTodoLists = function () {
@@ -24,6 +25,21 @@
                 
             // Return the promise emidietly(will be solved in the future)    
             return deferred.promise;
+        };
+        
+        /*
+            Returns details for a given to do list
+            =====================================================
+        */
+
+        factory.getListDetailsById = function(id) {
+            var deffered = $q.defer();
+
+            $http.get("/api/TodoListData/" + id).success(function(data) {
+                deffered.resolve(data);
+            });
+
+            return deffered.promise;
         };
 
         // return the factory object
