@@ -16,6 +16,7 @@ namespace TodoA.Web
 
             bundles.Add(new ScriptBundle("~/bundles/third-party").Include(
                         "~/Scripts/angular/angular.js",
+                        "~/Scripts/angular/angular-route.js",
                         "~/Scripts/moment.js"
                         
             ));
@@ -31,7 +32,10 @@ namespace TodoA.Web
                         "~/Scripts/app/factories/*.js",
 
                         // contorllers
-                        "~/Scripts/app/controllers/*.js"
+                        "~/Scripts/app/controllers/*.js",
+
+                        // Routing
+                        "~/Scripts/app/routing/*.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(

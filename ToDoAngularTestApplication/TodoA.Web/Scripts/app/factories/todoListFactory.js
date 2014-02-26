@@ -16,7 +16,7 @@
         factory.getUserTodoLists = function () {
             var deferred = $q.defer();
 
-            $http.get("/TodoLists/GetUserTodoLists")
+            $http.get("/api/TodoListData")
                 .success(function (data) {
                     // Resolve the promise with data objcet.
                     deferred.resolve(data);

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Routing;
+﻿using System.Web.Routing;
+using TodoA.Web.routes;
 
 namespace TodoA.Web
 {
@@ -11,13 +7,7 @@ namespace TodoA.Web
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "TodoLists", action = "Index", id = UrlParameter.Optional }
-            );
+            routes.Add("Default", new DefaultRoute());
         }
     }
 }
