@@ -15,9 +15,15 @@ namespace TodoA.Web
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/third-party").Include(
+                
+                        // core angular
                         "~/Scripts/angular/angular.js",
-                        "~/Scripts/moment.js"
+                        "~/Scripts/angular/angular-route.js",
+
+                        // angular bootstrap
+                        "~/Scripts/angular-bootstrap/ui-bootstrap-tpls-0.10.0.js",
                         
+                        "~/Scripts/moment.js"
             ));
 
             bundles.Add(new ScriptBundle("~/bundles/angular-app").Include(
@@ -31,7 +37,11 @@ namespace TodoA.Web
                         "~/Scripts/app/factories/*.js",
 
                         // contorllers
-                        "~/Scripts/app/controllers/*.js"
+                        "~/Scripts/app/controllers/modals/*.js",
+                        "~/Scripts/app/controllers/*.js",
+                        
+                        // Routing
+                        "~/Scripts/app/routing/*.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(

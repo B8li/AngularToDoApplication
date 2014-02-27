@@ -1,5 +1,5 @@
 ﻿/*
-    Application related styles
+    Application related styles for the To-do LIST PAGE
 */
 
 #listOfTodos {
@@ -10,90 +10,146 @@
     margin-bottom: 20px;
 }
 
-    #listOfTodos li {
-        display: block;
-        clear: both;
-        
-        width: 100%;
-        
-        padding: 10px;
-        
-        margin-top: 5px;
-        margin-bottom: 5px;
-        
-        border: 1px solid #CCC;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
-    }
+#listOfTodos li {
+    display: block;
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #CCC;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
 
 .todoList {
+}
+
+.list-stat {
+}
+
+.stat-name {
+    font-weight: bold;
+}
+
+    .stat-name i {
+        margin-right: 5px;
+    }
+
+.list-name {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-left: 2px dashed #CCC;
+    border-right: 2px dashed #CCC;
+    -ms-border-radius: 5px;
+    border-radius: 2px;
+}
+
+    .list-name:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+    }
+
+.list-date-created {
+}
+
+
+    .list-date-created i {
+        color: #3a6baf;
+    }
+
+.list-finished-items {
+}
+
+    .list-finished-items i {
+        color: #15c13c;
+    }
+
+.list-remaining-items {
+}
+
+    .list-remaining-items i {
+        color: #d96128;
+    }
+
+.list-actions {
+    margin-top: 10px;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.list-action {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*
+    Application related styles for the To-do DETAILS PAGE
+*/
+
+.app-details-header-info {
+    font-size: 18px !important;
+    color: #cccccc !important;
+}
+
+.details-stat {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* The ul list containing the to-do list items*/
+#item-list {
+    list-style: none;
+}
+
+.list-item {
+    display: block;
+    float: left;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #cfcfcf;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fef281;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+}
+
+    .list-item:hover {
+        cursor: pointer;
+        background-color: #ebe07d;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.24);
+    }
+
+.list-item-text {
+    height: 150px;
+    text-align: center;
+    font-family: 'Cookie', Helvetica, sans-serif;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    font-size: 24px;
+}
+
+.list-item-actions {
+    font-size: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 30px;
+}
+
+.item-status {
 
 }
 
-    .list-stat {
-
+    .item-status i.finished {
+        color: #15c13c;
     }
 
-        .stat-name {
-            font-weight: bold;
-        }
-
-         .stat-name i{
-             margin-right: 5px;
-        }
-
-        .list-name {
-            padding: 10px;
-            
-            font-size: 20px;
-            
-            background-color: #f9f9f9;
-            
-            margin-bottom: 5px;
-            
-            border-left: 2px dashed #CCC;
-            border-right: 2px dashed #CCC;
-            
-            -ms-border-radius: 5px;
-            border-radius: 2px;
-        }
-
-            .list-name:hover {
-                cursor: pointer;
-                background-color: #f2f2f2;
-            }
-
-        .list-date-created {
-
-        }
-
-                color: #3a6baf;
-            .list-date-created i {
-            }
-
-        .list-finished-items {
-
-        }
-
-            .list-finished-items i{
-                color: #15c13c;
-            }
-
-        .list-remaining-items {
-                
-        }
-
-            .list-remaining-items i{
-                color: #d96128;
-            }
-
-       .list-actions {
-           margin-top: 10px;
-           text-align: right;
-           padding-top: 5px;
-        }
-
-           .list-action {
-               margin-left: 5px;
-               margin-right: 5px;
-            }
+    .item-status i.pending {
+        color: #d96128;
+    }
