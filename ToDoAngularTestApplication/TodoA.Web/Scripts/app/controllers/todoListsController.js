@@ -35,16 +35,18 @@
             var modalInstance = $modal.open({
                 templateUrl: 'editListContent.html',
                 controller: "ListEditModalController",
-                scope:$scope
+                scope: $scope,
+                
+                // we can pass in data here 
             });
 
             // setup what to do when modal is closed either with ok or cancel?
             modalInstance.result.then(
                 function (data) {
-                    $log.info("Data From Modal " + data.title);
+                    todoListFactory.saveTodoList(data);
                 }
                 , function () {
-                    $log.info('Modal dismissed at: ' + new Date());
+                    // modal dismissed, and we will do nothing here
                 }
             );
         };

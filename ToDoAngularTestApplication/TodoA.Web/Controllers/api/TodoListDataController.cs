@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Globalization;
 using System.Linq;
-using System.Net.Mime;
 using System.Web.Http;
-using TodoA.Model.Entities;
 using TodoA.Web.Models.Todo;
 
 namespace TodoA.Web.Controllers.api
@@ -14,13 +10,21 @@ namespace TodoA.Web.Controllers.api
     {
         #region Actions
 
-        // GET api/<controller>
+        /// <summary>
+        /// Get all todo lists
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<TodoListDisplayDto> Get()
         {
             return GetTestTodoListData();
         }
 
-        // GET api/<controller>
+        
+        /// <summary>
+        /// GET Details for a single to do List
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public TodoListDetailsDto Get(int id)
         {
             return GetDetailsDto(id);
@@ -29,7 +33,6 @@ namespace TodoA.Web.Controllers.api
         #endregion
 
         #region Mock Data
-
 
         #region Lists
 
