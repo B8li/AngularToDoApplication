@@ -195,6 +195,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular-bootstrap\ui-bootstrap-tpls-0.10.0.js" />
+    <Content Include="Scripts\angular-bootstrap\ui-bootstrap-tpls-0.10.0.min.js" />
     <Content Include="Scripts\angular\angular-animate.js" />
     <Content Include="Scripts\angular\angular-animate.min.js" />
     <Content Include="Scripts\angular\angular-cookies.js" />
@@ -214,8 +216,9 @@
     <Content Include="Scripts\angular\angular-touch.min.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
-    <Content Include="Scripts\app\controllers\toDoListsDetailsController.js" />
-    <Content Include="Scripts\app\controllers\todoListsController.js" />
+    <Content Include="Scripts\app\controllers\modals\ListEditModalController.js" />
+    <Content Include="Scripts\app\controllers\ToDoListsDetailsController.js" />
+    <Content Include="Scripts\app\controllers\TodoListsController.js" />
     <Content Include="Scripts\app\factories\todoListFactory.js" />
     <Content Include="Scripts\app\routing\routes.js" />
     <Content Include="Scripts\app\TodoApp.js" />
@@ -504,15 +507,17 @@
     </Content>
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Dialog\EditListDialog.cshtml" />
     <None Include="Views\Partials\TodoLists.cshtml" />
     <None Include="Views\Partials\TodoListDetails.cshtml" />
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\_PageStart.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\app\services\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
